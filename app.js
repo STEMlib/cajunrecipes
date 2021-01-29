@@ -20,8 +20,7 @@ function buildTable(data) {
     // First, clear out any existing data
     ingredients_table.html("");
 
-    //specific_recipe = generateRandomInteger(data);
-    specific_recipe = data
+    specific_recipe = generateRandomInteger(data);
 
     // Instantiate relevant variables for quick retrieval
     var recipe_keys = Object.keys(specific_recipe);
@@ -102,7 +101,7 @@ function handleClickRandom() {
 }
 
 // Attach an event to listen for the search recipes button
-d3.select("#search-btn").on("click", handleClickSearch);
+d3. select("#search-btn").on("click", handleClickSearch);
 
 // Attach an event to listen for the generate random recipe button
 d3.select("#filter-btn").on("click", handleClickRandom);
